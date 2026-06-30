@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahmed | Web Developer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    height:80px;
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+    backdrop-filter:blur(15px);
+    background:rgba(17,24,39,.85);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:22px;
+    color:#cbd5e1;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#38bdf8;
+    color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-5px);
+}
+/* ABOUT */
+
+.about{
+
+padding:100px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
+flex-wrap:wrap;
+
+}
+
+.about-text{
+
+flex:1;
+
+}
+
+.about-text h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+color:#38bdf8;
+
+}
+
+.about-text p{
+
+font-size:18px;
+
+line-height:32px;
+
+color:#cbd5e1;
+
+}
+
+.about-text span{
+
+color:#38bdf8;
+
+font-weight:bold;
+
+}
+
+.about-box{
+
+flex:1;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:20px;
+
+}
+
+.card{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:#38bdf8;
+
+color:#fff;
+
+}
+
+.card h3{
+
+font-size:35px;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+}
+/* ========================= */
+/* SKILLS */
+/* ========================= */
+
+.skills{
+
+padding:100px 8%;
+
+background:#111827;
+
+}
+
+.skills h2{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:60px;
+
+color:#38bdf8;
+
+}
+
+.skill{
+
+margin-bottom:30px;
+
+}
+
+.skill p{
+
+font-size:20px;
+
+margin-bottom:10px;
+
+}
+
+.progress{
+
+width:100%;
+
+height:28px;
+
+background:#1f2937;
+
+border-radius:30px;
+
+overflow:hidden;
+
+}
+
+.progress-bar{
+
+height:100%;
+
+line-height:28px;
+
+text-align:right;
+
+padding-right:15px;
+
+font-weight:bold;
+
+background:linear-gradient(90deg,#38bdf8,#0ea5e9);
+
+border-radius:30px;
+
+transition:1s;
+
+}
+
+.html{
+
+width:95%;
+
+}
+
+.css{
+
+width:90%;
+
+}
+
+.js{
+
+width:75%;
+
+}
+
+.php{
+
+width:85%;
+
+}
+
+.mysql{
+
+width:80%;
+
+}
+/* ===========================
+SERVICES
+=========================== */
+
+#services{
+
+padding:100px 8%;
+
+background:#0f172a;
+
+}
+
+.services-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.service-card{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+
+.service-card h2{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#38bdf8;
+
+}
+
+.service-card p{
+
+color:#cbd5e1;
+
+line-height:28px;
+
+font-size:16px;
+
+}
+/* ==========================
+PROJECTS
+========================== */
+
+#projects{
+
+padding:100px 8%;
+
+background:#111827;
+
+}
+
+.project-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.project-card{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+.project-img{
+
+width:100%;
+height:220px;
+
+background:linear-gradient(135deg,#334155,#475569);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:15px;
+
+color:#38bdf8;
+
+font-size:32px;
+font-weight:bold;
+
+margin-bottom:20px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.project-card:hover .project-img{
+
+background:#475569;
+
+}
+
+.project-card h3{
+
+margin-bottom:15px;
+
+color:#38bdf8;
+
+}
+
+.project-card p{
+
+color:#cbd5e1;
+
+line-height:28px;
+
+margin-bottom:25px;
+
+}
+
+.project-card a{
+
+display:inline-block;
+
+padding:12px 28px;
+
+background:#38bdf8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.project-card a:hover{
+
+background:#0284c7;
+}
+/* ===========================
+CONTACT
+=========================== */
+
+#contact{
+
+padding:100px 8%;
+
+background:#0f172a;
+
+}
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:50px;
+
+margin-top:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:35px;
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+font-size:18px;
+
+line-height:32px;
+
+color:#cbd5e1;
+
+margin-bottom:15px;
+
+}
+
+.contact-form{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+background:#111827;
+
+border:none;
+
+outline:none;
+
+border-radius:10px;
+
+color:white;
+
+font-size:16px;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+padding:15px;
+
+background:#38bdf8;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#0284c7;
+
+transform:scale(1.03);
+
+}
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+background:#020617;
+
+padding:60px 8% 20px;
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+}
+
+.footer-logo h2{
+
+color:#38bdf8;
+
+font-size:35px;
+
+margin-bottom:10px;
+
+}
+
+.footer-logo p{
+
+color:#cbd5e1;
+
+}
+
+.footer-links h3,
+.footer-contact h3{
+
+margin-bottom:20px;
+
+color:#38bdf8;
+
+}
+
+.footer-links a{
+
+display:block;
+
+text-decoration:none;
+
+color:#cbd5e1;
+
+margin-bottom:12px;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#38bdf8;
+
+padding-left:10px;
+
+}
+
+.footer-contact p{
+
+margin-bottom:12px;
+
+color:#cbd5e1;
+
+}
+
+footer hr{
+
+margin:40px 0 20px;
+
+border:.5px solid #334155;
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#94a3b8;
+
+}
+/* Typing */
+
+#typing{
+
+font-size:35px;
+
+font-weight:bold;
+
+color:#38bdf8;
+
+}
+
+/* WhatsApp */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 0 20px rgba(0,0,0,.4);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* Top Button */
+
+#topBtn{
+
+position:fixed;
+
+bottom:95px;
+
+right:22px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#38bdf8;
+
+color:white;
+
+font-size:25px;
+
+cursor:pointer;
+
+display:none;
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#0284c7;
+
+}
+/* =======================
+PREMIUM PROJECTS
+======================= */
+
+.project-card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,.1);
+
+overflow:hidden;
+
+}
+
+.project-img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+margin-bottom:20px;
+
+transition:.5s;
+
+}
+
+.project-card:hover .project-img{
+
+transform:scale(1.08);
+
+}
+
+.project-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 20px 40px rgba(56,189,248,.35);
+
+}
+.hero-buttons{
+
+margin-top:30px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#38bdf8,#0ea5e9,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.project-card{
+    transition:.5s;
+}
+
+.project-card:hover{
+    transform:translateY(-15px) scale(1.03);
+    box-shadow:0 0 35px rgba(56,189,248,.45);
+}
+.service-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 0 30px rgba(56,189,248,.45);
+}
+section{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+::selection{
+background:#38bdf8;
+color:white;
+}
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+background:#38bdf8;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#0284c7;
+}
+.social-links{
+
+margin-top:30px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 25px;
+
+border:2px solid #38bdf8;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.social-links a:hover{
+
+background:#38bdf8;
+
+color:#fff;
+
+transform:translateY(-5px);
+
+}
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:120px 8%;
+
+gap:60px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero-text h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.hero-text span{
+
+color:#38bdf8;
+
+}
+
+.hero-text h2{
+
+font-size:38px;
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+font-size:22px;
+
+color:#cbd5e1;
+
+margin-bottom:35px;
+
+}
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:350px;
+
+height:350px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid #38bdf8;
+
+box-shadow:0 0 35px rgba(56,189,248,.4);
+
+transition:.4s;
+object-fit:cover;
+
+border-radius:50%;
+
+}
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+.hero-image img:hover{
+
+transform:scale(1.05);
+
+}
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:250px;
+
+height:250px;
+
+}
+
+.hero-text h1{
+
+font-size:45px;
+
+}
+
+.hero-text h2{
+
+font-size:28px;
+
+}
+
+}
+/* ==========================
+EDUCATION
+========================== */
+
+#education{
+
+padding:100px 8%;
+
+background:#0f172a;
+
+}
+
+.education-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.edu-card{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.4s;
+
+}
+
+.edu-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+
+.edu-card h2{
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.edu-card p{
+
+color:#cbd5e1;
+
+margin:10px 0;
+
+line-height:28px;
+
+}
+/* ==========================
+TESTIMONIALS
+========================== */
+
+#testimonials{
+
+padding:100px 8%;
+
+background:#111827;
+
+}
+
+.testimonial-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.testimonial-card{
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 25px rgba(56,189,248,.35);
+
+}
+
+.testimonial-card p{
+
+font-size:17px;
+
+line-height:30px;
+
+color:#cbd5e1;
+
+margin-bottom:20px;
+
+font-style:italic;
+
+}
+
+.testimonial-card h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+.testimonial-card h4{
+
+color:#38bdf8;
+
+}
+/* ==========================
+FAQ
+========================== */
+
+#faq{
+
+padding:100px 8%;
+
+background:#0f172a;
+
+}
+
+.faq-container{
+
+max-width:800px;
+
+margin:auto;
+
+margin-top:40px;
+
+}
+
+.faq-item{
+
+margin-bottom:20px;
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+.faq-question{
+
+width:100%;
+
+padding:18px;
+
+font-size:18px;
+
+background:#1e293b;
+
+color:#fff;
+
+border:none;
+
+cursor:pointer;
+
+text-align:left;
+
+transition:.3s;
+
+}
+
+.faq-question:hover{
+
+background:#38bdf8;
+
+}
+
+.faq-answer{
+
+display:none;
+
+padding:18px;
+
+background:#111827;
+
+color:#cbd5e1;
+
+line-height:28px;
+
+}
+
+.faq-item.active .faq-answer{
+
+display:block;
+
+}
+/* ==========================
+PRICING
+========================== */
+
+#pricing{
+
+padding:100px 8%;
+
+background:#111827;
+
+}
+
+.pricing-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.price-card{
+
+background:#1e293b;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+text-align:center;
+
+position:relative;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.price-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 30px rgba(56,189,248,.35);
+
+}
+
+.price-card h2{
+
+font-size:30px;
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+}
+
+.price-card h3{
+
+font-size:38px;
+
+margin-bottom:20px;
+
+}
+
+.price-card ul{
+
+list-style:none;
+
+margin-bottom:30px;
+
+padding:0;
+
+}
+
+.price-card ul li{
+
+margin:12px 0;
+
+color:#cbd5e1;
+
+}
+
+.badge{
+
+position:absolute;
+
+top:-12px;
+
+right:20px;
+
+background:#38bdf8;
+
+color:white;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:14px;
+
+font-weight:bold;
+
+}
+
+.popular{
+
+border:2px solid #38bdf8;
+
+transform:scale(1.05);
+
+}
+/* ==========================
+WHATSAPP CONTACT
+========================== */
+
+#whatsapp-contact{
+
+padding:100px 8%;
+
+background:#0f172a;
+
+}
+
+.whatsapp-box{
+
+max-width:800px;
+
+margin:auto;
+
+background:#1e293b;
+
+padding:60px 40px;
+
+border-radius:25px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.whatsapp-box h1{
+
+font-size:40px;
+
+color:#38bdf8;
+
+margin-bottom:20px;
+
+}
+
+.whatsapp-box p{
+
+font-size:18px;
+
+color:#cbd5e1;
+
+line-height:30px;
+
+margin-bottom:35px;
+
+}
+
+.whatsapp-btn{
+
+display:inline-block;
+
+background:#25D366;
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 40px;
+
+font-size:20px;
+
+font-weight:bold;
+
+border-radius:50px;
+
+transition:.4s;
+
+}
+
+.whatsapp-btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 10px 25px rgba(37,211,102,.45);
+
+}
+/* ==========================
+THEME BUTTON
+========================== */
+
+#themeBtn{
+
+padding:10px 18px;
+
+font-size:20px;
+
+background:#38bdf8;
+
+color:white;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+#themeBtn:hover{
+
+background:#0284c7;
+
+transform:scale(1.1);
+
+}
+
+/* Light Theme */
+
+body.light{
+
+background:#f8fafc;
+
+color:#111827;
+
+}
+
+body.light nav{
+
+background:#ffffff;
+
+}
+
+body.light .card,
+body.light .service-card,
+body.light .project-card,
+body.light .edu-card,
+body.light .testimonial-card,
+body.light .price-card,
+body.light .whatsapp-box,
+body.light .contact-form{
+
+background:#ffffff;
+
+color:#111827;
+
+border:1px solid #ddd;
+
+}
+
+body.light p,
+body.light li{
+
+color:#374151;
+
+}
+
+body.light .faq-question{
+
+background:#e5e7eb;
+
+color:#111827;
+
+}
+
+body.light .faq-answer{
+
+background:#f8fafc;
+
+color:#374151;
+
+}
+/* ==========================
+PRELOADER
+========================== */
+
+#preloader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:#0f172a;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:.6s;
+
+}
+
+.loader{
+
+width:70px;
+
+height:70px;
+
+border:8px solid rgba(255,255,255,.15);
+
+border-top:8px solid #38bdf8;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+#preloader h2{
+
+margin-top:20px;
+
+font-size:24px;
+
+color:white;
+
+letter-spacing:2px;
+
+}
+
+@keyframes spin{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+/* ==========================
+MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+/* Navbar */
+
+nav{
+
+padding:15px 5%;
+
+flex-direction:column;
+
+height:auto;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+width:100%;
+
+margin-top:15px;
+
+text-align:center;
+
+}
+
+nav ul li{
+
+margin:12px 0;
+
+}
+
+/* Hero */
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding:120px 5% 60px;
+
+}
+
+.hero-text h1{
+
+font-size:40px;
+
+}
+
+.hero-text h2{
+
+font-size:26px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+}
+
+.hero-image img{
+
+width:220px;
+
+height:220px;
+
+}
+
+/* About */
+
+.about{
+
+flex-direction:column;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn{
+
+width:220px;
+
+}
+
+/* Sections */
+
+section{
+
+padding:80px 5%;
+
+}
+
+.title{
+
+font-size:34px;
+
+}
+
+/* Cards */
+
+.services-container,
+.project-container,
+.education-container,
+.testimonial-container,
+.pricing-container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+}
+</style>
+
+</head>
+
+<body>
+    <div id="preloader">
+
+    <div class="loader"></div>
+
+    <h2>Loading...</h2>
+
+</div>
+
+<nav>
+
+<div class="logo">
+
+Ahmed
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+
+
+</ul>
+
+<button id="themeBtn">🌙</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Ahmed</span></h1>
+
+<h2>
+    <span id="typing"></span>
+</h2>
+
+<p>
+I Build Modern Static & Dynamic Websites
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="#contact" class="btn btn2">Hire Me</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="image/WhatsApp Image 2026-05-03 at 11.57.23 AM.jpeg" alt="Ahmed">
+
+</div>
+
+</section>
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="#contact" class="btn">
+Hire Me
+</a>
+</div>
+<div class="social-links">
+
+<a href="https://github.com/" class="btn">GitHub</a>
+
+<a href="https://www.linkedin.com/" class="btn">LinkedIn</a>
+
+<a href="cv/Ahmed-CV.pdf" download class="btn">
+    📄 Download CV
+</a>
+
+</div>
+
+
+<section class="about" id="about">
+
+    <div class="about-text">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm <span>Ahmed</span>, a passionate Web Developer from Moro, Sindh.
+            I create modern, responsive and user-friendly websites using HTML, CSS,
+            JavaScript, PHP and MySQL.
+
+            I enjoy building Static Websites, Dynamic Websites and E-Commerce Projects
+            that help businesses grow online.
+        </p>
+
+    </div>
+
+    <div class="about-box">
+
+        <div class="card">
+
+            <h3>10+</h3>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>100%</h3>
+
+            <p>Responsive</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>24/7</h3>
+
+            <p>Support</p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="skills" id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill">
+
+        <p>HTML</p>
+
+        <div class="progress">
+
+            <div class="progress-bar html">95%</div>
+
+        </div>
+
+    </div>
+
+    <div class="skill">
+
+        <p>CSS</p>
+
+        <div class="progress">
+
+            <div class="progress-bar css">90%</div>
+
+        </div>
+
+    </div>
+
+    <div class="skill">
+
+        <p>JavaScript</p>
+
+        <div class="progress">
+
+            <div class="progress-bar js">75%</div>
+
+        </div>
+
+    </div>
+
+    <div class="skill">
+
+        <p>PHP</p>
+
+        <div class="progress">
+
+            <div class="progress-bar php">85%</div>
+
+        </div>
+
+    </div>
+
+    <div class="skill">
+
+        <p>MySQL</p>
+
+        <div class="progress">
+
+            <div class="progress-bar mysql">80%</div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="services">
+
+<h1 class="title">My Services</h1>
+
+<div class="services-container">
+
+<div class="service-card">
+
+<h2>🌐</h2>
+
+<h3>Static Website</h3>
+
+<p>
+Professional Responsive Static Websites using HTML, CSS & JavaScript.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h2>⚙️</h2>
+
+<h3>Dynamic Website</h3>
+
+<p>
+PHP & MySQL Based Dynamic Websites with Admin Panel.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h2>🛒</h2>
+
+<h3>E-Commerce</h3>
+
+<p>
+Online Shopping Website with Login, Cart and Admin Panel.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h2>🚀</h2>
+
+<h3>Website Maintenance</h3>
+
+<p>
+Bug Fixes, Updates, Performance Optimization and Support.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="projects">
+
+<h1 class="title">My Projects</h1>
+
+<div class="project-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+
+        <div class="project-img">
+            Coming Soon
+        </div>
+
+        <h3>E-Commerce Website</h3>
+
+        <p>
+            Modern online shopping website with login system, admin panel and product management.
+        </p>
+
+        <a href="#">Live Demo</a>
+
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+
+        <div class="project-img">
+            Coming Soon
+        </div>
+
+        <h3>Solar Panel Management</h3>
+
+        <p>
+            Complete solar panel management system with customer records and billing.
+        </p>
+
+        <a href="#">Live Demo</a>
+
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+
+        <div class="project-img">
+            Coming Soon
+        </div>
+
+        <h3>Hospital Website</h3>
+
+        <p>
+            Professional hospital website with appointment and information pages.
+        </p>
+
+        <a href="#">Live Demo</a>
+
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+
+        <div class="project-img">
+            Coming Soon
+        </div>
+
+        <h3>Bakery Website</h3>
+
+        <p>
+            Responsive bakery website with product showcase and contact section.
+        </p>
+
+        <a href="#" onclick="alert('Project Coming Soon!')">Live Demo</a>
+
+    </div>
+
+</div>
+
+</section>
+<section id="education">
+
+<h1 class="title">Education & Certificates</h1>
+
+<div class="education-container">
+
+<div class="edu-card">
+
+<h2>🎓 Intermediate</h2>
+
+<p>Govt. Degree College Moro</p>
+
+<p>Nawabshah Board</p>
+
+<p>Result Awaited (2026)</p>
+
+</div>
+
+<div class="edu-card">
+
+<h2>💻 DIT</h2>
+
+<p>Ehsaas Vocational Institute Moro</p>
+
+<p>Diploma in Information Technology</p>
+
+<p>Completed</p>
+
+</div>
+
+<div class="edu-card">
+
+<h2>🌐 Web Development</h2>
+
+<p>HTML, CSS, JavaScript</p>
+
+<p>PHP & MySQL</p>
+
+<p>Self Learning</p>
+
+</div>
+
+</div>
+
+</section>
+</section>
+<section id="testimonials">
+
+<h1 class="title">Client Testimonials</h1>
+
+<div class="testimonial-container">
+
+<div class="testimonial-card">
+
+<p>
+"Very professional website. Fast delivery and great communication."
+</p>
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<h4>Future Client</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+"Excellent work! The website looks modern and works perfectly."
+</p>
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<h4>Future Client</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+"I highly recommend Ahmed for web development projects."
+</p>
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<h4>Future Client</h4>
+
+</div>
+
+</div>
+
+</section>
+<section id="faq">
+
+<h1 class="title">Frequently Asked Questions</h1>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<button class="faq-question">How much does a website cost?</button>
+<div class="faq-answer">
+<p>Website pricing depends on the type of project and required features.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">How long does it take?</button>
+<div class="faq-answer">
+<p>Most basic websites are completed within 3–7 days.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">Is the website mobile responsive?</button>
+<div class="faq-answer">
+<p>Yes, every website is fully responsive and works on mobile, tablet and desktop.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">Do you provide support after delivery?</button>
+<div class="faq-answer">
+<p>Yes, I provide free support for bug fixes after delivery.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+<section id="pricing">
+
+<h1 class="title">Pricing Plans</h1>
+
+<div class="pricing-container">
+
+<div class="price-card">
+
+<h2>Basic</h2>
+
+<h3>Rs. 5,000</h3>
+
+<ul>
+
+<li>✔ 1-3 Pages</li>
+<li>✔ Responsive Design</li>
+<li>✔ Contact Form</li>
+<li>✔ 3 Days Delivery</li>
+
+</ul>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+<div class="price-card popular">
+
+<span class="badge">Most Popular</span>
+
+<h2>Standard</h2>
+
+<h3>Rs. 12,000</h3>
+
+<ul>
+
+<li>✔ 5-7 Pages</li>
+<li>✔ Responsive Design</li>
+<li>✔ PHP & MySQL</li>
+<li>✔ Admin Panel</li>
+<li>✔ 5 Days Delivery</li>
+
+</ul>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+<div class="price-card">
+
+<h2>Premium</h2>
+
+<h3>Rs. 25,000</h3>
+
+<ul>
+
+<li>✔ Unlimited Pages</li>
+<li>✔ Dynamic Website</li>
+<li>✔ Admin Panel</li>
+<li>✔ Database</li>
+<li>✔ Free Support</li>
+
+</ul>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="whatsapp-contact">
+
+    <div class="whatsapp-box">
+
+        <h1>Let's Build Your Website 🚀</h1>
+
+        <p>
+            Have an idea? Contact me on WhatsApp and let's discuss your project.
+        </p>
+
+        <a href="https://wa.me/923185237982?text=Hello%20Ahmed,%20I%20want%20to%20build%20a%20website." target="_blank" class="whatsapp-btn">
+💬 Chat on WhatsApp
+</a>
+           
+
+        </a>
+
+    </div>
+
+</section>
+<section id="contact">
+
+<h1 class="title">Contact Me</h1>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h2>Let's Work Together 🚀</h2>
+
+<p>If you need a professional website for your business, feel free to contact me.</p>
+
+<p><strong>📞 Phone:</strong> 03185237982</p>
+
+<p><strong>📧 Email:</strong> aq82663821@gmail.com</p>
+
+<p><strong>📍 Address:</strong> Latif Colony, Moro, Sindh</p>
+
+</div>
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Write Your Message..." rows="6" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-logo">
+
+<h2>Ahmed</h2>
+
+<p>Professional Web Developer</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3>Quick Links</h3>
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>Contact</h3>
+
+<p>📞 03185237982</p>
+
+<p>📧 aq82663821@gmail.com</p>
+
+<p>📍 Moro, Sindh</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 Ahmed. All Rights Reserved.
+</p>
+
+</footer>
+<a href="https://wa.me/923185237982" class="whatsapp" target="_blank">
+💬
+</a>
+
+<button id="topBtn">
+⬆
+</button>
+<script>
+
+// =========================
+// HERO TYPING EFFECT
+// =========================
+
+const typingElement = document.getElementById("typing");
+
+if (typingElement) {
+
+    const text = "Professional Web Developer";
+    let i = 0;
+
+    function typing() {
+
+        if (i < text.length) {
+
+            typingElement.innerHTML += text.charAt(i);
+            i++;
+
+            setTimeout(typing, 100);
+
+        }
+
+    }
+
+    typing();
+
+}
+
+
+// =========================
+// BACK TO TOP BUTTON
+// =========================
+
+const btn = document.getElementById("topBtn");
+
+if (btn) {
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 300) {
+
+            btn.style.display = "block";
+
+        } else {
+
+            btn.style.display = "none";
+
+        }
+
+    });
+
+    btn.addEventListener("click", function () {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
+
+
+// =========================
+// FAQ
+// =========================
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(function(item){
+
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", function(){
+
+        item.classList.toggle("active");
+
+    });
+
+});
+// =========================
+// DARK / LIGHT MODE
+// =========================
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", function(){
+
+document.body.classList.toggle("light");
+
+if(document.body.classList.contains("light")){
+
+themeBtn.innerHTML="☀️";
+
+}else{
+
+themeBtn.innerHTML="🌙";
+
+}
+
+});
+// =========================
+// PRELOADER
+// =========================
+
+window.addEventListener("load", function(){
+
+const preloader = document.getElementById("preloader");
+
+preloader.style.opacity = "0";
+
+setTimeout(function(){
+
+preloader.style.display = "none";
+
+},600);
+
+});
+</script>
+</body>
+</html>
